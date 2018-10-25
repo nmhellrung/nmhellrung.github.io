@@ -21,10 +21,24 @@ html, body {
 	padding: 0vh;
 	
 	font-family: 'VT323', monospace;
-	font-size: 7vw;
+	font-size: 8vw;
 }
+#blinking-underscore {
+	font-family: 'VT323', monospace;
+	font-size: 8vw;
+	animation: cursorBlinker 1.8s ease-out 0s infinite normal forwards running;
+}
+@keyframes cursorBlinker {
+	0% { opacity: 0; }
+	10% { opacity: 1; }
+	50% { opacity: 1; }
+	60% {opacity: 0; }
+	100% {opacity: 0; }
+}
+
 #computer-engineer {
 	margin-top: 0vh;
+	margin-bottom: 0vh;
 	padding: 0vh;
 	
 	font-size: 1.6vw;
@@ -32,21 +46,22 @@ html, body {
 
 
 .tabs {
+	margin-top: 2.5vh;
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
-	border: .2vw solid rgb(0, 255, 0);
+	border: .21vw solid rgb(0, 255, 0);
 	background-color: black;
 }
 .tabs button {
-	padding: .7vw 4vw;
+	padding: .7vw 5.158vw;
 	background-color: black;
     border: none;
     outline: none;
     cursor: pointer;
     transition: 0.15s;
 	font-family: 'VT323', monospace;
-	font-size: 2vw;
+	font-size: 2.4vw;
 	font-weight: bold;
 	color: rgb(0, 255, 0);
 }
@@ -68,30 +83,45 @@ html, body {
     border-top: none;
 	background-color: black;
 	color: rgb(0, 255, 0);
-	animation: fadeIn .5s; /* .5s fade in animation */
+	animation: fadeIn 1.5s ease-out;
 }
 @keyframes fadeIn {
-	0% { opacity: .1; }
+	0% { opacity: 0; }
 	100% {opacity: 1;}
 }
 
 
+
 h3 {
-	font-size: 3vw;
+	margin-top: 1vh;
+	margin-bottom: 2vh;
+	font-size: 3.5vw;
     text-decoration: underline;
 }
 
 h4 {
-	font-size: 2vw;
+	padding-bottom: 0vw;
+	margin-bottom: 0;
+	margin-top: 2vh;
+	font-size: 2.5vw;
 }
 
 h5 {
-	font-size: 1.3vw;
+	font-size: 2vw;
 	margin: 0;
 }
 
+h6 {
+	padding-bottom: 0vw;
+	padding-top: 0vw;
+	margin-bottom: 0;
+	margin-top: 0;
+	font-size: 1.5vw;
+}
+
 p {
-	font-size: 1vw;
+	font-size: 1.25vw;
+	display: inline;
 }
 
 
@@ -101,6 +131,7 @@ ol {
 
 
 #emailaddress {
+	font-size: 1.5vw;
 	font-weight: bold;
 	color: rgb(0, 150, 255);
 }
