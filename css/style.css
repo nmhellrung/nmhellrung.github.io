@@ -29,13 +29,13 @@ body {
 }
 
 
-.console {
+.tabs {
 	overflow: hidden;
 	border: 1vh solid #000;
 	background-color: grey;
 }
-.console button {
-	background-color: inherit;
+.tabs button {
+	background-color: yellow;
     float: left;
     border: none;
     outline: none;
@@ -43,16 +43,16 @@ body {
     padding: 14px 16px;
     transition: 0.3s;
 }
-.console button:hover {
-	background-color: yellow;
+.tabs button:hover {
+	background-color: orange;
 }
-.console button.active {
-	background-color: blue;
+.tabs button.active {
+	background-color: red;
 }
 .tabcontent {
 	display: none;
     padding: 6px 12px;
-    border: 1px solid red;
+    border: 1px solid black;
     border-top: none;
 }
 
