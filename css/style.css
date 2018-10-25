@@ -4,7 +4,7 @@ Author: Nathan Hellrung
 
 
 body {
-    background-color: #FFF;
+    background-color: black;
 	font-family: "Courier New", monospace;
 }
 
@@ -13,6 +13,7 @@ body {
 	margin-top: 0vh;
 	
 	text-align: center;
+	color: rgb(0, 255, 0);
 }
 #nathan-hellrung {
 	margin-top: 3vh;
@@ -21,7 +22,7 @@ body {
 	
 	font-size: 6vw;
 }
-.mynameinfo {
+#computer-engineer {
 	margin-top: 0vh;
 	padding: 0vh;
 	
@@ -30,29 +31,65 @@ body {
 
 
 .tabs {
+	display: flex;
+	justify-content: center;
 	overflow: hidden;
-	border: 1vh solid #000;
-	background-color: grey;
+	border: 4px solid rgb(0, 255, 0);
+	background-color: black;
 }
 .tabs button {
-	background-color: yellow;
-    float: left;
+	background-color: black;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+    padding: 14px 40px;
+    transition: 0.15s;
+	font-family: "Courier New", monospace;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(0, 255, 0);
 }
 .tabs button:hover {
-	background-color: orange;
+	background-color: rgb(80, 80, 80);
 }
 .tabs button.active {
-	background-color: red;
+	background-color: rgb(0, 255, 0);
+	color: black;
 }
+.tabs button.active:hover {
+	background-color: rgb(0, 200, 0);
+}
+
 .tabcontent {
 	display: none;
     padding: 6px 12px;
-    border: 1px solid black;
+    border: 4px solid rgb(0, 255, 0);
     border-top: none;
+	background-color: black;
+	color: rgb(0, 255, 0);
+	animation: fadeIn .5s; /* .5s fade in animation */
+}
+@keyframes fadeIn {
+	0% { opacity: .1; }
+	100% {opacity: 1;}
+}
+}
+
+
+ol {
+	list-style-type: square;
+}
+
+
+#emailaddress {
+	font-weight: bold;
+	color: rgb(0, 150, 255);
+}
+
+
+.attributions {
+	text-align: center;
+	color: grey;
+	font-size: 9px;
 }
 
