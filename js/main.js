@@ -57,10 +57,22 @@ function openTab(evt, sectionName) {
 		evt.currentTarget.className += " active";
 	}
 	else {
-		// If the clicked tab is the current active/displayed tab,
-		// hide that section and remove the "active" class from the tab's button.
-		document.getElementById(sectionName).style.display = "none";
-		evt.currentTarget.className -= " active";
+		// If the clicked tab is the currently active one, close it instead.
+		// Same code as above, but does not activate/display a tab at the end.
+		
+		// Set local "tabcontent" variable = a container containing all html elements with class="tabcontent"
+		// Then hide all of those elements (i.e. hide all tabcontent)
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+
+		// Get all html elements with class="tablinks" and remove the class "active"
+		// (i.e. we are setting all tab buttons to be inactive, then we will activate the target later.)
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
 	}
 }
 
