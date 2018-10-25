@@ -58,9 +58,7 @@ function openTab(evt, sectionName) {
 	}
 	else {
 		// If the clicked tab is the current active/displayed tab,
-		// wait 1 second (for fade out animation), then
 		// hide that section and remove the "active" class from the tab's button.
-		//delay(1000);
 		document.getElementById(sectionName).style.display = "none";
 		evt.currentTarget.className -= " active";
 	}
