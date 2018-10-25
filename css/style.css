@@ -1,0 +1,58 @@
+/*
+Author: Nathan Hellrung
+*/
+
+
+body {
+    background-color: #FFF;
+	font-family: "Courier New", monospace;
+}
+
+
+.myname {
+	margin-top: 0vh;
+	
+	text-align: center;
+}
+#nathan-hellrung {
+	margin-top: 3vh;
+	margin-bottom: 0vh;
+	padding: 0vh;
+	
+	font-size: 6vw;
+}
+.mynameinfo {
+	margin-top: 0vh;
+	padding: 0vh;
+	
+	font-size: 1.8vw;
+}
+
+
+.console {
+	overflow: hidden;
+	border: 1vh solid #000;
+	background-color: grey;
+}
+.console button {
+	background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+.console button:hover {
+	background-color: yellow;
+}
+.console button.active {
+	background-color: blue;
+}
+.tabcontent {
+	display: none;
+    padding: 6px 12px;
+    border: 1px solid red;
+    border-top: none;
+}
+
