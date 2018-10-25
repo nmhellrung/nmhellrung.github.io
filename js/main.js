@@ -5,32 +5,6 @@ Thanks to w3schools.com for guide on implementing "tabs".
 */
 
 
-/* delay function delays code execution by specified milliseconds (ms) */
-/*
-function delay(ms) {
-	var start_time = Date.now();
-	while (Date.now() - start_time < ms);
-}
-*/
-
-
-
-/* Function to quickly reveal all elements in a div one-at-a-time for a cool effect*/
-/*
-function elementsReveal(ancestorId) {
-	// Acquire/define an HTML element and a collection of sub-elements within it
-	var ancestor = document.getElementById('ancestorId');
-    var descendents = ancestor.getElementsByTagName('*');
-	
-	var i, e, d;
-	for (i = 0; i < descendents.length; ++i) {
-		e = descendents[i];
-		e.style.display = "block";
-	}
-}
-*/
-
-
 function openTab(evt, sectionName) {
     // Declare all variables
     var i, tabcontent, tablinks;
