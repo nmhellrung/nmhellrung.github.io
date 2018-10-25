@@ -1,7 +1,7 @@
 /*
 Nathan Hellrung
 
-Thanks to w3schools.com for "tab" guide.
+Thanks to w3schools.com for guide on implementing "tabs".
 */
 
 
