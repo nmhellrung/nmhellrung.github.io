@@ -20,12 +20,12 @@ html, body {
 	color: rgb(0, 255, 0);
 }
 #nathan-hellrung {
-	margin-top: 4vh;
+	margin-top: 5vh;
 	margin-bottom: 0vh;
 	padding: 0vh;
 	
 	font-family: 'VT323', monospace;
-	font-size: 8vw;
+	font-size: 8.5vw;
 }
 #blinking-underscore {
 	font-family: 'VT323', monospace;
@@ -41,7 +41,7 @@ html, body {
 }
 
 #computer-engineer {
-	margin-top: 0vh;
+	margin-top: -2vh;
 	margin-bottom: 0vh;
 	padding: 0vh;
 	
@@ -50,7 +50,7 @@ html, body {
 
 
 .tabs {
-	margin-top: 2.4vh;
+	margin-top: 1.4vh;
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
@@ -58,15 +58,14 @@ html, body {
 	background-color: black;
 }
 .tabs button {
-	padding: .7vw 5.158vw;
+	padding: .64vw 3.26vw;
 	background-color: black;
     border: none;
     outline: none;
     cursor: pointer;
     transition: 0.15s;
 	font-family: 'VT323', monospace;
-	font-size: 2.4vw;
-	font-weight: bold;
+	font-size: 2.65vw;
 	color: rgb(0, 255, 0);
 }
 .tabs button:hover {
@@ -74,7 +73,7 @@ html, body {
 }
 .tabs button.active {
 	background-color: rgb(0, 255, 0);
-	color: black;
+	color: #000000;
 }
 .tabs button.active:hover {
 	background-color: rgb(0, 140, 0);
@@ -107,11 +106,11 @@ h4 {
 	padding-bottom: 0vw;
 	margin-bottom: 0;
 	margin-top: 2vh;
-	font-size: 2.5vw;
+	font-size: 2.4vw;
 }
 
 h5 {
-	font-size: 2vw;
+	font-size: 1.8vw;
 	margin: 0;
 }
 
@@ -120,11 +119,11 @@ h6 {
 	padding-top: 0vw;
 	margin-bottom: 0;
 	margin-top: 0;
-	font-size: 1.5vw;
+	font-size: 1.55vw;
 }
 
 p {
-	font-size: 1.25vw;
+	font-size: 1.3vw;
 	display: inline;
 }
 
@@ -137,12 +136,12 @@ ol {
 #emailaddress {
 	font-size: 1.5vw;
 	font-weight: bold;
-	color: rgb(0, 150, 255);
+	color: rgb(0, 255, 0);
 }
 
 
 
-
+/*
 @keyframes turn-on{
   0%{
     transform:scale(1,0.8) translate3d(0,0,0);
@@ -166,8 +165,6 @@ ol {
     opacity:0;
   }
   
-  
-  
   11%{
     transform:scale(1,1) translate3d(0,0,0);
     -webkit-filter:contrast(0) brightness(0) ;
@@ -182,7 +179,59 @@ ol {
     opacity:1;
   }
 }
-
+*/
+@keyframes turn-on{
+  0%{ /* initial state */
+    transform:scale(1.5, 0.66) translate3d(0,0,0);
+    -webkit-filter:brightness(30);
+    filter:brightness(50);
+    opacity:1;
+  }
+  3%{ /* first down-scan ends here */
+    transform:scale(3, 2) translate3d(0,200%,0);
+  }
+  
+  4%{ /* quickly back to top */
+    transform:scale(1.1, 1) translate3d(0,-300%,0);
+	filter:brightness(30);
+    opacity:1;
+  } 
+  
+  11%{ /* second down-scan ends here */
+    transform:scale(1.4, 0.8) translate3d(0,300%,0);
+    -webkit-filter:brightness(30);
+    filter:brightness(20);
+    opacity:.5;
+  }
+  
+  13%{ /* second up-scan ends here */
+    transform:scale(1.7, 0.9) translate3d(0,-300%,0);
+    /*-webkit-filter:contrast(0) brightness(0) ;
+    filter:contrast(0) brightness(0);*/
+    opacity:1;
+  }
+  
+  30%{ /* down and fade */
+    transform:scale(1, 1.2) translate3d(0,50%,0);
+	-webkit-filter:contrast(0) brightness(0) ;
+    filter:contrast(0) brightness(0);
+    opacity:1;
+  }
+  
+  32%{ /* assume the position */
+    transform:scale(1, 1) translate3d(0,0,0);
+    -webkit-filter:contrast(0) brightness(0) ;
+    filter:contrast(0) brightness(0);
+    opacity:0;
+  }
+  
+  100%{
+    transform:scale(1,1) translate3d(0,0,0);
+    -webkit-filter:contrast(1) brightness(1.2) saturate(1.3);
+    filter:contrast(1) brightness(1.2) saturate(1.3);
+    opacity:1;
+  }
+}
 
 
 
@@ -346,7 +395,7 @@ ol {
   pointer-events: none;
 }
 .crt {
-  animation: turn-on 4s linear 0s 1 forwards, textShadow 1.6s infinite;
+	animation: turn-on 4s linear 0s 1 forwards, textShadow 1.6s infinite;
 }
 
 
