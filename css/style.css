@@ -9,7 +9,10 @@ Author: Nathan Hellrung
 html, body {
 	margin: 0 auto;
 	height: 99%;
-	overflow: hidden;
+	width: 100%;
+	/* overflow: auto; */
+	overflow-y: auto;
+	overflow-x: hidden;
     background-color: #000000;
 	font-family: 'VT323', monospace;
 }
@@ -53,14 +56,17 @@ html, body {
 
 .tabs {
 	margin-top: 1.4vh;
+	width: auto;
+	overflow: hidden;
 	display: flex;
 	justify-content: center;
-	overflow: hidden;
+	align-items: center;
 	border: .21vw solid rgb(0, 255, 0);
 	background-color: black;
 }
 .tabs button {
-	padding: .64vw 3.26vw;
+	padding: .64vw;
+	flex: 1;
 	background-color: black;
     border: none;
     outline: none;
@@ -83,6 +89,7 @@ html, body {
 
 .tabcontent {
 	display: none;
+	width: auto;
     padding: .4vw .8vw;
     border: .2vw solid rgb(0, 255, 0);
     border-top: none;
@@ -132,6 +139,7 @@ p {
 
 ol {
 	list-style-type: square;
+	font-size: 1.3vw;
 }
 
 
