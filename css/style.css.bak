@@ -405,7 +405,7 @@ ol {
   pointer-events: none;
 }
 .crt {
-	animation: turn-on 2s linear 0s 1 forwards, textShadow 1.6s infinite;
+	animation: turn-on 8s linear 0s 1 forwards, textShadow 1.6s infinite;
 }
 
 
